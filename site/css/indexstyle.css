@@ -7,11 +7,12 @@
 principal
 body {
     background-color: var(--ColorFondo);
+    min-height: 100vh
 }
 div {
     background-color: var(--ColorPrincipal);
     border-color: var(--ColorDestacado1);
-    border-radius: 30%;
+    border-radius: 30px;
 }
 h1 {
     color: var(--ColorDestacado2);
