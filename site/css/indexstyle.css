@@ -1,3 +1,18 @@
+:root {
+--ColorPrincipal: #222222;
+--ColorFondo: #000000;
+--ColorDestacado1: #1DCD9F;
+--ColorDestacado2: #169976;
+}
+principal
+body {
+    background-color: var(--ColorFondo);
+}
+div {
+    background-color: var(--ColorPrincipal);
+    border-color: var(--ColorDestacado1);
+    border-radius: 30%;
+}
 h1 {
-    color: red;
+    color: var(--ColorDestacado2);
 }
