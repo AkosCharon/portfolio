@@ -4,7 +4,7 @@
 --ColorDestacado1: #1DCD9F;
 --ColorDestacado2: #169976;
 }
-body {
+html {
     background-color: var(--ColorFondo);
     min-height: 100vh;
 }
