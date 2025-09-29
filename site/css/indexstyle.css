@@ -7,7 +7,7 @@
 principal
 body {
     background-color: var(--ColorFondo);
-    min-height: 100vh
+    min-height: 100vh;
 }
 div {
     background-color: var(--ColorPrincipal);
