@@ -1,18 +1,71 @@
+
 :root {
---ColorPrincipal: #222222;
---ColorFondo: #000000;
---ColorDestacado1: #1DCD9F;
---ColorDestacado2: #169976;
+    --fondoCol: #0d1117;
+    --headerCol: #161b22;
+    --text-color: #c9d1d9;
+    --accent-color: #58a6ff;
 }
-html {
-    background-color: var(--ColorFondo);
-    min-height: 100vh;
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--fondoCol);
+    color: var(--text-color);
 }
-div {
-    background-color: var(--ColorPrincipal);
-    border-color: var(--ColorDestacado1);
-    border-radius: 30px;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--headerCol);
+    position: sticky;
+    top: 0;
 }
-h1 {
-    color: var(--ColorDestacado2);
+
+header h1 {
+    margin: 0;
+}
+
+nav button {
+    background-color: transparent;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav button:hover {
+    background-color: var(--accent-color);
+    color: var(--fondoCol);
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+.certificados-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.certificado {
+    background-color: #21262d;
+    padding: 1rem;
+    border-radius: 8px;
+    flex: 1 1 150px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.certificado:hover {
+    transform: scale(1.05);
 }
