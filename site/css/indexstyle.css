@@ -15,26 +15,46 @@ body {
 /* ---------- HEADER ---------- */
 header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem 0rem;
     background-color: var(--headerCol);
     position: sticky;
     top: 0;
     backdrop-filter: blur(8px);
+    width: 100vw;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 1.5rem;
+/* Contenedor superior: título a la izquierda, idiomas a la derecha */
+.header-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* título izquierda, idiomas derecha */
+    align-items: center;
 }
 
-/* ---------- NAV ---------- */
-nav {
+.header-top h1 {
+    margin: 0 0 0 1rem;
+    font-size: 1.8rem;
+    color: var(--accent-color);
+}
+
+/* Botones de idiomas */
+.nav-idiomas {
     display: flex;
     gap: 0.5rem;
+    margin: 0 1rem 0 0;
 }
 
+/* Botones navegacion */
+.nav-principal {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* Botones generales */
 nav button {
     background-color: transparent;
     border: 1px solid var(--accent-color);
@@ -79,42 +99,44 @@ section {
 
 .certificado {
     background-color: #21262d;
-    padding: 2rem;
+    padding: 1rem 0.2rem 1rem 1rem;
     border-radius: 8px;
     flex: 1 1 250px;
     text-align: left;
     transition: transform 0.3s;
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    flex-direction: row;
+    gap: 0rem;
     font-size: 1rem;
     font-weight: 700;
+}
+.certificado img {
+    max-width: 15vh;
+    margin: 0;
+    padding: 0;
+    left: 0px;
+}
+.certificado p {
+    max-width: 60%;
 }
 
 .certificado:hover {
     transform: scale(1.05);
 }
 
-/* ---------- RESPONSIVE ---------- */
+
+
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.8rem;
-        padding: 1rem;
-    }
 
-    nav {
-        width: 100%;
-        justify-content: space-around;
-    }
 
-    main {
-        padding: 1rem;
+    .nav-principal {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
     }
 
     header h1 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     nav button {
@@ -130,53 +152,19 @@ section {
     }
 
     nav button {
-        font-size: 0.95rem;
-        width: 25vw;
+        font-size: 0.8rem;
+        width: auto;
     }
 
-
-    header h1 {
-        font-size: 1rem;
+    .nav-principal {
+        flex-direction: row;
+        gap: 0.5rem;
+        align-items: center;
     }
-
-section {
-    margin-bottom: 3rem;
-    padding: 0;
-}
-.cajaCertificado {
-    margin: 3% 2%;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: stretch;
-    gap: 1rem;
-    justify-content: center;
-    width: 100%;
-}
-
-.datosCert {
-    flex: 1 1 55%;
-    min-height: 4rem;
-    min-width: 8rem;
-    border-radius: 8px;
-    background-color: #21262d;
-    padding: 1rem;
-}
-
-.certificado {
-    background-color: #21262d;
-    padding: 1rem;
-    border-radius: 8px;
-    flex: 1 1 35%;
-    text-align: left;
-    transition: transform 0.3s;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    font-size: 1rem;
-    font-weight: 700;
-    max-width: 40%;
-}
-
-
+    .nav-idiomas {
+        display: flex;
+        gap: 0.2rem;
+        margin: 0 .5rem 0 0;
+    }
 
 }
