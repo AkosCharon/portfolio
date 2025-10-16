@@ -171,9 +171,9 @@ section {
 
 @media (max-width: 480px) {
 
-    main {
-        padding: 0.5rem;
-    }
+main {
+    padding: 0 1rem;
+}    
 
    .cajaCertificado {
     margin: 3% 1%;
