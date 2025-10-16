@@ -149,12 +149,52 @@ section {
         padding: 0.4rem 0.8rem;
         font-size: 0.9rem;
     }
-}
+   .cajaCertificado {
+    margin: 3% 10%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+   }
 
-@media (max-width: 480px) {
     .certificado {
         font-size: 0.9rem;
         padding: 1rem;
+        width: 60%;
+    }
+
+    .datosCert {
+        width: 25%;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    main {
+        padding: 0.5rem;
+    }
+
+   .cajaCertificado {
+    margin: 3% 1%;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+    justify-content: center;
+    font-size: 0.5rem;
+   }
+
+    .certificado {
+        font-size: 0.8rem;
+        padding: 1rem;
+        width: 60%;
+    }
+
+    .datosCert {
+        width: 25%;
+        display: flex;
     }
 
     nav button {
