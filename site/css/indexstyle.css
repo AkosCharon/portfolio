@@ -46,6 +46,19 @@ header {
     margin: 0 1rem 0 0;
 }
 
+
+/* Botones generales */
+nav button {
+    background-color: transparent;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 600;
+}
+
 /* Botones navegacion */
 .nav-principal {
     display: flex;
@@ -59,17 +72,6 @@ header {
             color: var(--fondoCol);
         }
 
-/* Botones generales */
-nav button {
-    background-color: transparent;
-    border: 1px solid var(--accent-color);
-    color: var(--accent-color);
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-    font-weight: 600;
-}
 
 nav button:hover {
     background-color: var(--accent-color);
@@ -214,10 +216,6 @@ main {
         align-items: center;
     }
 
-        .nav-principal a button {
-            background-color: var(--accent-color);
-            color: var(--fondoCol);
-        }
 
     .nav-idiomas {
         display: flex;
