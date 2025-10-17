@@ -107,11 +107,11 @@ section {
 }
     .datosCert img {
         width: 5rem;
+        padding: 1rem;
     }
 
 .certificado {
     background-color: #21262d;
-    padding: 1rem 0.2rem 1rem 1rem;
     border-radius: 8px;
     flex: 1 1 250px;
     text-align: left;
@@ -131,6 +131,7 @@ section {
 }
 .certificado p {
     max-width: 60%;
+    padding: 1rem 0 1rem 1rem;
 }
 
 .certificado:hover {
@@ -166,9 +167,11 @@ section {
 
     .certificado {
         font-size: 0.9rem;
-        padding: 1rem;
+        padding: 0rem;
         width: 60%;
     }
+    
+
 
     .datosCert {
         width: 25%;
