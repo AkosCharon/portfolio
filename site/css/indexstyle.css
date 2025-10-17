@@ -54,6 +54,11 @@ header {
     margin-top: 0.5rem;
 }
 
+            .nav-principal a button {
+            background-color: var(--accent-color);
+            color: var(--fondoCol);
+        }
+
 /* Botones generales */
 nav button {
     background-color: transparent;
@@ -201,12 +206,19 @@ main {
         font-size: 0.8rem;
         width: auto;
     }
+    
 
     .nav-principal {
         flex-direction: row;
         gap: 0.5rem;
         align-items: center;
     }
+
+        .nav-principal a button {
+            background-color: var(--accent-color);
+            color: var(--fondoCol);
+        }
+
     .nav-idiomas {
         display: flex;
         gap: 0.2rem;
