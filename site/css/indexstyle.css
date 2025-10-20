@@ -3,6 +3,7 @@
     --headerCol: #161b226e;
     --text-color: #c9d1d9;
     --accent-color: #58a6ff;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -44,6 +45,9 @@ header {
     display: flex;
     gap: 0.5rem;
     margin: 0 1rem 0 0;
+}
+
+.nav-idiomas button {
 }
 
 
