@@ -24,6 +24,7 @@ header {
     top: 0;
     backdrop-filter: blur(8px);
     width: 100vw;
+    z-index: 1000;
 }
 
 /* Contenedor superior: título a la izquierda, idiomas a la derecha */
