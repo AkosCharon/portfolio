@@ -68,6 +68,7 @@ nav button {
             .nav-principal a button {
             background-color: var(--accent-color);
             color: var(--fondoCol);
+                font-size: 1.4rem;
         }
 
 
@@ -86,6 +87,10 @@ main {
 
 .certificados {
     transform: scale(.85);
+}
+
+.certificados h2 {
+    font-size: 2.4rem;
 }
 
 section {
@@ -138,6 +143,7 @@ section {
 .certificado p {
     max-width: 60%;
     padding: 1rem 0 1rem 1rem;
+    font-size: 1.25rem;
 }
 
 .certificado:hover {
@@ -205,6 +211,10 @@ main {
         gap: 0.5rem;
         align-items: center;}
 
+        .nav-principal a button {
+            background-color: var(--accent-color);
+            color: var(--fondoCol);
+            font-size: 0.9rem;}
 
     .nav-idiomas {
         display: flex;
@@ -226,7 +236,8 @@ main {
             flex-wrap: nowrap;
             gap: 0.5rem;
             justify-content: center;
-            font-size: 0.5rem;}
+            font-size: 0.5rem;
+            height: 7rem;}
 
 
             .certificado {
@@ -236,7 +247,7 @@ main {
                 width: 70%;}
 
                 .certificado img {
-                    height: 80%;
+                    height: 100%;
                     aspect-ratio: 1/1;
                     margin: 0;
                     padding: 0;
@@ -244,7 +255,8 @@ main {
 
                 .certificado p {
                     width: fit-content;
-                    padding: 0.5rem 0 0.5rem 0.3rem;
+                    font-size: 0.9rem;
+                    padding: 0.6rem 0 0.6rem 0.3rem;
                     margin: 0;}
 
             .datosCert {
