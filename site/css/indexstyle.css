@@ -82,9 +82,15 @@ nav button:hover {
     color: var(--fondoCol);
 }
 
+
 /* ---------- MAIN ---------- */
 main {
     padding: 2rem;
+}
+
+
+.certificados {
+    transform: scale(.85);
 }
 
 section {
