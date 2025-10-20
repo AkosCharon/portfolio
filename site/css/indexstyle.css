@@ -78,19 +78,33 @@ nav button:hover {
 }
 
 main {
-    padding: 0 4rem;
+    padding: 2rem calc(25vw - 260px);
 }
 
 .pagprinc {
     padding: 0 calc(20vw - 90px);
 }
 
+.pagprinc h2 {
+    font-size: 2rem;
+}
+
+.pagprinc p {
+    margin-left: 3vw;
+}
+
+        #inicio {
+            margin-top: 5rem;
+        }
+
 .certificados {
     transform: scale(.85);
+    padding: 0 calc(15vw - 270px);
 }
 
 .certificados h2 {
     font-size: 2.4rem;
+    margin-left: 5vw;
 }
 
 section {
@@ -100,7 +114,7 @@ section {
 .cajaCertificado {
     margin: 3% 10%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     gap: 1rem;
     justify-content: center;
 }
@@ -127,7 +141,7 @@ section {
     text-align: left;
     transition: transform 0.3s;
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
     justify-content: space-between;
     gap: 0rem;
     font-size: 1rem;
@@ -141,9 +155,18 @@ section {
 }
 
 .certificado p {
-    max-width: 60%;
     padding: 1rem 0 1rem 1rem;
     font-size: 1.25rem;
+}
+
+#NoIMG {
+    display: block;
+    flex-direction: unset;
+    justify-content: unset;
+}
+
+#NoIMG p {
+    width: 100%;
 }
 
 .certificado:hover {
