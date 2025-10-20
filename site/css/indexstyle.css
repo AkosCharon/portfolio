@@ -13,7 +13,6 @@ body {
     color: var(--text-color);
 }
 
-/* ---------- HEADER ---------- */
 header {
     display: flex;
     flex-direction: column;
@@ -27,11 +26,10 @@ header {
     z-index: 1000;
 }
 
-/* Contenedor superior: título a la izquierda, idiomas a la derecha */
 .header-top {
     width: 100%;
     display: flex;
-    justify-content: space-between; /* título izquierda, idiomas derecha */
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -41,18 +39,14 @@ header {
     color: var(--accent-color);
 }
 
-/* Botones de idiomas */
 .nav-idiomas {
     display: flex;
     gap: 0.5rem;
     margin: 0 1rem 0 0;
 }
 
-.nav-idiomas button {
-}
 
 
-/* Botones generales */
 nav button {
     background-color: transparent;
     border: 1px solid var(--accent-color);
@@ -64,7 +58,6 @@ nav button {
     font-weight: 600;
 }
 
-/* Botones navegacion */
 .nav-principal {
     display: flex;
     justify-content: center;
@@ -83,12 +76,13 @@ nav button:hover {
     color: var(--fondoCol);
 }
 
-
-/* ---------- MAIN ---------- */
 main {
     padding: 2rem;
 }
 
+.pagprinc {
+    padding: 0 20vw;
+}
 
 .certificados {
     transform: scale(.85);
@@ -98,7 +92,6 @@ section {
     margin-bottom: 3rem;
 }
 
-/* ---------- CERTIFICADOS ---------- */
 .cajaCertificado {
     margin: 3% 10%;
     display: flex;
@@ -112,13 +105,14 @@ section {
     min-width: 7rem;
     border-radius: 8px;
     background-color: #21262d;
-    display: flex;                /* 🔹 activa Flexbox */
-    justify-content: center;      /* 🔹 centra horizontalmente */
-    align-items: center;          /* 🔹 centra verticalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s;
 }
     .datosCert img {
         width: 5rem;
-        padding: 1rem;
+        padding: 1.5rem;
     }
 
 .certificado {
@@ -146,6 +140,10 @@ section {
 }
 
 .certificado:hover {
+    transform: scale(1.05);
+}
+
+.datosCert:hover {
     transform: scale(1.05);
 }
 
