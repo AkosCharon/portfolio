@@ -28,42 +28,92 @@
         <section class="certificados">
             <h2>TITLES</h2>
             <div class="cajaCertificado">
-                <div class="certificado" id="NoIMG"">
-                    <p>
-                        <view>VIEW<br></view>
-                        ESPECIALISTA EN SEGURIDAD DE INTERNET <br>
-                        IFCM004PO</p>
-                    <!--<img src="" alt="">-->
-                    </div>
-                <div class="datosCert"><a href="site/media/Certificados/Especialista_en_seguridad_de_internet_72595240H_diploma_2018_OC24990014TF_72595240H.pdf" download="CertificadoEspecialistaSeguridadGalderCharon.pdf"><img src="site/media/botondescarga.png" alt=""></a></div>
-
+            <div class="certificado" class="NoIMG" id="cert1">
+                <p>
+                    <view>VIEW<br></view>
+                    ESPECIALISTA EN SEGURIDAD DE INTERNET <br>
+                    IFCM004PO</p>
+                <!--<img src="" alt="">-->
             </div>
-            
-            <div class="cajaCertificado">
-                <div class="certificado" id="NoIMG">
-                    <p>
-                        <view>VIEW<br></view>
-                        BIG DATA Y TRANSFORMACIÓN DIGITAL<br>
-                        IFCTOOO4HV
-                    </p>
-                    <!--<img src="" alt="">-->
-                    </div>
-                <div class="datosCert"><a href="site/media/Certificados/Especialista_en_seguridad_de_internet_72595240H_diploma_2018_OC24990014TF_72595240H.pdf" download="CertificadoEspecialistaSeguridadGalderCharon.pdf"><img src="site/media/botondescarga.png" alt=""></a></div>
+            <div class="datosCert">
+                <a href="site/media/Certificados/Especialista_en_seguridad_de_internet_72595240H_diploma_2018_OC24990014TF_72595240H.pdf" download="CertificadoEspecialistaSeguridadGalderCharon.pdf">
+                    <img src="site/media/botondescarga.png" alt="">
+                </a>
             </div>
 
-            <div class="cajaCertificado">
-                <div class="certificado">
-                    <p>
-                        <view>VIEW<br></view>
-                        AWS ACADEMY GRADUATE - CLOUD FOUNDATIONS
-                    </p>
-                    <img src="site/media/Certificados/AWS/AWSCloudFoundations.png" alt="">
-                </div>
+            <dialog class="pdfDialog">
+                <h3 class="tituloDialogo">Certificado: ESPECIALISTA EN SEGURIDAD DE INTERNET</h3>
+                <iframe src="site/media/Certificados/Especialista_en_seguridad_de_internet_72595240H_diploma_2018_OC24990014TF_72595240H.pdf" width="100%" height="500px"></iframe>
+                <br>
+                <button class="cerrarDialogo">Cerrar</button>
+            </dialog>
+        </div>
 
-                <div class="datosCert"><a href="site/media/Certificados/AWS/AWS_Academy_Graduate___Cloud_Foundations___Training_Badge_Badge20251016-32-pdn6yk.pdf" download="AWSCloudFoundationsGalderCharon.pdf"><img src="site/media/botondescarga.png" alt=""></a></div>
+        <div class="cajaCertificado">
+            <div class="certificado" class="NoIMG" id="cert2">
+                <p>
+                    <view>VIEW<br></view>
+                    BIG DATA Y TRANSFORMACIÓN DIGITAL<br>
+                    IFCTOOO4HV
+                </p>
+                <!--<img src="" alt="">-->
+            </div>
+            <div class="datosCert">
+                <a href="site/media/Certificados/0H.pdf" download="CertificadoEspecialistaSeguridadGalderCharon.pdf">
+                    <img src="site/media/botondescarga.png" alt="">
+                </a>
             </div>
 
-        </section>
-    </main>
+            <dialog class="pdfDialog">
+                <h3 class="tituloDialogo">Certificado: BIG DATA Y TRANSFORMACIÓN DIGITAL</h3>
+                <iframe src="site/media/Certificados/0H.pdf" width="100%" height="500px"></iframe>
+                <br>
+                <button class="cerrarDialogo">Cerrar</button>
+            </dialog>
+        </div>
+
+        <div class="cajaCertificado">
+            <div class="certificado" id="cert3">
+                <p>
+                    <view>VIEW<br></view>
+                    AWS ACADEMY GRADUATE - CLOUD FOUNDATIONS
+                </p>
+                <img src="site/media/Certificados/AWS/AWSCloudFoundations.png" alt="">
+            </div>
+            <div class="datosCert">
+                <a href="site/media/Certificados/AWS/AWS_Academy_Graduate___Cloud_Foundations___Training_Badge_Badge20251016-32-pdn6yk.pdf" download="AWSCloudFoundationsGalderCharon.pdf">
+                    <img src="site/media/botondescarga.png" alt="">
+                </a>
+            </div>
+
+            <dialog class="pdfDialog">
+                <h3 class="tituloDialogo">Certificado: AWS ACADEMY GRADUATE - CLOUD FOUNDATIONS</h3>
+                <iframe src="site/media/Certificados/AWS/AWS_Academy_Graduate___Cloud_Foundations___Training_Badge_Badge20251016-32-pdn6yk.pdf" width="100%" height="500px"></iframe>
+                <br>
+                <button class="cerrarDialogo">Cerrar</button>
+            </dialog>
+        </div>
+
+    </section>
+</main>
+
+<script>
+    const certificados = document.querySelectorAll('.certificado');
+
+    certificados.forEach(cert => {
+        const caja = cert.parentElement;
+        const dialog = caja.querySelector('.pdfDialog');
+        const cerrar = dialog.querySelector('.cerrarDialogo');
+
+        cert.addEventListener('click', () => {
+            dialog.showModal();
+        });
+
+        cerrar.addEventListener('click', () => {
+            dialog.close();
+        });
+    });
+</script>
+
 </body>
 </html>
