@@ -134,6 +134,7 @@ section {
     padding: 0;
     right: 0px;
 }
+
 .certificado p {
     max-width: 60%;
     padding: 1rem 0 1rem 1rem;
@@ -194,6 +195,11 @@ main {
     padding: 0 1rem;
 }    
 
+
+.pagprinc {
+    padding: 0 5vw;
+}
+
    .cajaCertificado {
     margin: 3% 1%;
     width: 90vw;
@@ -206,7 +212,8 @@ main {
    }
 
 .certificado img {
-    max-width: 10vh;
+    height: 10rem;
+    width: 10rem;
     margin: 0;
     padding: 0;
     right: 0px;
@@ -214,10 +221,16 @@ main {
 
     .certificado {
         font-size: 0.8rem;
-        padding: 1rem;
+        padding: 0.5rem;
         width: 60%;
     }
 
+
+        .certificado p {
+            max-width: 60%;
+            padding: 0.3rem 0 1rem 0.3rem;
+            margin: 0;
+        }
     .datosCert {
         width: 25%;
         display: flex;
