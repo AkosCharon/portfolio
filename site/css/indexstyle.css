@@ -232,10 +232,11 @@ main {
             .certificado {
                 font-size: 0.8rem;
                 padding: 0.5rem;
+                margin: 0;
                 width: 70%;}
 
                 .certificado img {
-                    height: fit content;
+                    height: 80%;
                     aspect-ratio: 1/1;
                     margin: 0;
                     padding: 0;
@@ -249,5 +250,7 @@ main {
             .datosCert {
                 width: 20%;
                 display: flex;}
+                            
+
 
     }
