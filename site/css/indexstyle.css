@@ -6,7 +6,10 @@
     --gradCol: #052242;
     --cajaCol: #21262db4;
     scroll-behavior:smooth;
-    
+  overflow: scroll;
+  scrollbar-color: var(accent-color) var(fondoCol) ;
+  scrollbar-width: thin;
+    }
 }
 
 body {
