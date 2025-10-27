@@ -5,6 +5,12 @@
     --accent-color: #58a6ff;
     --gradCol: #052242;
     --cajaCol: #21262db4;
+    --colTitulo: #c9d1d9cd;
+    --colSys: #c9d1d9;
+    --colVirt: #c9d1d9;
+    --colDB: #c9d1d9;
+    --colDev: #c9d1d9;
+    
     scroll-behavior:smooth;
   overflow: scroll;
   scrollbar-color: var(accent-color) var(fondoCol) ;
@@ -128,7 +134,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    padding: 0 calc(50px + 4vw);
+    padding: 0 calc(40px + 2vw);
 }
 
 .competencias button {
@@ -145,7 +151,28 @@ main {
     gap: 1rem;
     flex: 0 1 auto;
     font-size: 1.3rem;
+    margin-left: calc(10 + 1vw);
 }
+    #TituloCat {
+        font-size: 1.5rem;
+        margin-left:  -1rem;
+        border-color: var(--colTitulo);
+        color: var(--colTitulo);
+        border-width: 2px;
+    }
+
+    #catSys:hover {
+        border-color: var(--colSys);
+        color: var(--colSys); }
+    #catVirt:hover {
+        border-color: var(--colVirt);
+        color: var(--colVirt);}
+    #catDB:hover {
+        border-color: var(--colDB);
+        color: var(--colDB);}
+    #catDev:hover {
+        border-color: var(--colDev);
+        color: var(--colDev);}
 
 .apuntes {
     transform: scale(.85);
@@ -251,7 +278,6 @@ section {
 
 
 
-
 @media (max-width: 768px) {
 
 
@@ -288,6 +314,7 @@ section {
     .datosCert {
         width: 25%;
     }
+
 
 }
 
